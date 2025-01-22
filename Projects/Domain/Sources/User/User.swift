@@ -14,11 +14,6 @@ public struct User: Codable {
     let betPoint: Int
 }
 
-struct Token: Codable {
-    let accessToken: String
-    let refreshToken: String
-}
-
 struct BoardUser {
     let profile: UIImage
     let name: String

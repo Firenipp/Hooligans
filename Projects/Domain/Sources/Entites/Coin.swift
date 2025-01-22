@@ -1,7 +1,7 @@
 import Foundation
 
 
-public struct Stock: Codable {
+public struct Coin: Codable {
   public let id: String
   public let price: Double
   public let category: String

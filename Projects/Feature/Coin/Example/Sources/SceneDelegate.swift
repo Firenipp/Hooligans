@@ -11,7 +11,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     let window = UIWindow(windowScene: scene)
 
-    let viewController = ComponentsTestViewController()
+    let viewController = CoinExampleViewController()
     let rootViewController = UINavigationController(rootViewController: viewController)
 
     window.rootViewController = rootViewController

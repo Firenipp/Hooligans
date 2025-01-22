@@ -13,7 +13,7 @@ import Domain
 
 
 public final class TradingViewModel {
-  private let useCase: UseCase
+  private let useCase: CoinListUseCase
   private let disposeBag = DisposeBag()
 
   struct Input {
@@ -27,7 +27,7 @@ public final class TradingViewModel {
 //  public let navigateToAuthCoordinator: PublishRelay<Void> = PublishRelay()
   public let output = Output()
 
-  public init(useCase: UseCase) {
+  public init(useCase: CoinListUseCase) {
     self.useCase = useCase
   }
 

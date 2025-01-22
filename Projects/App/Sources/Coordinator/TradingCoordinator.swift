@@ -15,7 +15,7 @@ final class TradingCoordinator: Coordinator {
 
   func start() {
     let repository = RepositoryImpl()               // Data layer
-    let useCase = UseCase(repository: repository)   // Domain layer
+    let useCase = CoinListUseCase(repository: repository)   // Domain layer
     let viewModel = TradingViewModel(useCase: useCase)     // Presentation layer
     let viewController = TradingViewController(viewModel: viewModel)
 

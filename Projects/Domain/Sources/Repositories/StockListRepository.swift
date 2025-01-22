@@ -3,6 +3,6 @@ import RxSwift
 
 protocol StockListRepository {
   
-  func getStockList() -> Observable<[Stock]>
+  func getStockList() -> Observable<[Coin]>
 
 }

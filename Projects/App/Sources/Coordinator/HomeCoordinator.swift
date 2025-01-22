@@ -20,7 +20,7 @@ final class HomeCoordinator: Coordinator {
   // MARK: - Start
   func start() {
     let repository = RepositoryImpl()               // Data layer
-    let useCase = UseCase(repository: repository)   // Domain layer
+    let useCase = CoinListUseCase(repository: repository)   // Domain layer
     let viewModel = MainViewModel(useCase: useCase)     // Presentation layer
     let viewController = MainViewController(viewModel: viewModel)
 
